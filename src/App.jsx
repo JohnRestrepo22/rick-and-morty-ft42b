@@ -1,8 +1,8 @@
 import './App.css';
-import Cards from './components/Cards.jsx';
+import Cards from './components/Cards/Cards.jsx';
 import { useState } from 'react';
-import NavBar from "./components/NavBar"
 import axios from 'axios';
+import NavBar from './components/NavBar/NavBar'
 
 
 function App() { 
@@ -25,7 +25,7 @@ const example = {
             if (data.name) {
                setCharacters((oldChars) => [...oldChars, data]);
             } else {
-               window.alert('¡No hay personajes con este ID!');
+               alert('¡No hay personajes con este ID!');
             }
          });
       }
@@ -35,7 +35,7 @@ const example = {
    
    return (
       <div className='App'>
-         <div>
+         <div className='loco'>
             <NavBar onSearch={onSearch}/>
          </div>
          <div>
