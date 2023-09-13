@@ -45,7 +45,7 @@ const example = {
             <Route path="/home" element={
                <Cards characters={characters} onClose={onClose} />
             }/>
-            <Route path="/Detail" element={<Detail/>} />
+            <Route path="/detail/:id" element={<Detail/>} />
          </Routes>
 
       </div>
