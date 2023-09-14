@@ -8,8 +8,9 @@ import { Route,Routes,useLocation,useNavigate, } from 'react-router-dom';
 import Detail from "./components/Detail/Detail"
 import Forms from './components/Form/Form';
 import { useEffect } from 'react';
+import Favorites from './components/Favorites/Favorites';
 const EMAIL = 'restrepojohn228@gmail.com';
-const PASSWORD = 'Counter123';
+const PASSWORD = 'counter123';
 
 function App() { 
    const {pathname} = useLocation()
@@ -65,6 +66,7 @@ const example = {
                <Cards characters={characters} onClose={onClose} />
             }/>
             <Route path="/detail/:id" element={<Detail/>} />
+            <Route path='/favorites' element={<Favorites/>}/>
          </Routes>
 
       </div>
