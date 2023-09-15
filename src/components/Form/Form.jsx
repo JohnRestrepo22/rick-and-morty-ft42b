@@ -1,5 +1,6 @@
 import { useState } from "react";
 import validation from "../../validation";
+import styles from "./Form.module.css"
 export default function Forms({login}) {
   const [userData, setUserData] = useState({
     email: "",
@@ -17,25 +18,19 @@ export default function Forms({login}) {
     login(userData)
   }
   return (
-    <div>
+    <div >
       <form>
-        <label htmlFor="email"> Email</label>
+        <label className={styles.datos} htmlFor="email"> Email</label>
         <input
           onChange={handleChange}
           value={userData.email}
           type="text"
           name="email"
         ></input>
-        {errors.email1 ? (
-          <p>{errors.email1}</p>
-        ) : errors.email2 ? (
-          <p>{errors.email2}</p>
-        ) : (
-          <p>{errors.email3}</p>
-        )}
-        <hr />
+       {errors.email && <p>{errors.email}</p>}
 
-        <label htmlFor="password"> Password</label>
+
+        <label className={styles.datos} htmlFor="password"> Password</label>
         <input
           onChange={handleChange}
           value={userData.password}
@@ -43,10 +38,10 @@ export default function Forms({login}) {
           name="password"
         />
         {
-            errors.password1 ? <p>{errors.password1}</p> : <p>{errors.p2}</p>
+          errors.password && <p>{errors.password}</p>
         }
-        <hr />
-        <button type="submit" onClick={handleSubmit}>!!!Submit!!!</button>
+        
+        <button className={styles.botonsito} type="submit" onClick={handleSubmit}>!!!Submit!!!</button>
       </form>
     </div>
   );

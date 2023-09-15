@@ -1,6 +1,8 @@
 import { connect } from "react-redux";
 import Card from "../Card/Card";
 
+
+
 const Favorites = ({ myFavorites }) => {
   return (
     <div>
@@ -16,8 +18,10 @@ const Favorites = ({ myFavorites }) => {
           origin,
           image,
           onClose
+          
         }) => {
           return (
+            <div className="olaaaaaa">
             <Card
               key={id}
               id={id}
@@ -28,7 +32,9 @@ const Favorites = ({ myFavorites }) => {
               origin={origin}
               image={image}
               onClose={onClose}
+              
             />
+            </div>
           );
         }
       )}

@@ -22,6 +22,9 @@ export default function About(props) {
       <p>
         <strong>Redes Sociales:</strong> <a href="https://github.com/JohnRestrepo22" target="_blank" rel="noopener noreferrer">GitHub</a>
       </p>
+      <p>
+        <strong>Created By:</strong> John Restrepo
+      </p>
         </div>
     )
 }

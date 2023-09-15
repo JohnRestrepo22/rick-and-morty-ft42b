@@ -1,0 +1,39 @@
+body{
+    color: rgb(173, 46, 46);;
+    font-size: 20px;
+}
+.botonsito{
+    background-color: rgb(173, 46, 46);
+    border-radius: 5px;
+    text-shadow: 2px 2px 4px rgba(250, 250, 250, 0.5);
+}
+
+.datos{
+    text-shadow: 2px 2px 4px rgba(250, 250, 250, 0.5);
+    font-size: 20px;
+    margin: 10px;
+    color:rgb(173, 46, 46);
+}
+
+
+.orden {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+
+  
+  
+  
+  
+  
