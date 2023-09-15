@@ -34,15 +34,17 @@ const Card = ({
 
   return (
     <div className={styles.cardcontainer}>
+      <div className={styles.buttonContainer}>
+        <button onClick={onClose}>X</button>
+      
       {isfav ? (
         <button onClick={handleFavorite}>❤️</button>
       ) : (
         <button onClick={handleFavorite}>🤍</button>
       )}
-      <div className={styles.buttonContainer}>
-        <button onClick={onClose}>X</button>
       </div>
-      <Link to={`/detail/${id}`}>
+      
+      <Link className={styles.link} to={`/detail/${id}`}>
         <img className={styles.image} src={image} alt="" />
         <div className={styles.cardInfo}>
           <h2>{name}</h2>

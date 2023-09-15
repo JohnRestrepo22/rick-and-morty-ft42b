@@ -40,3 +40,12 @@
 .read-the-docs {
   color: #888;
 }
+
+body{
+  background-image: url("https://i.pinimg.com/originals/15/62/da/1562dad7deeb73595b34c4bba49ec04e.png");
+  background-size: cover; 
+  background-repeat: no-repeat;
+  font-family: 'Martian Mono', monospace;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Patrick Hand', cursive;
+}

@@ -1,5 +1,13 @@
 .redText {
-    color: red;
-    display: flex;
-    justify-content: center;
-  }
+  display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-color: #262526;
+    padding: 10;
+}
+input{
+  height: 30px;
+  border: 0px;
+   border-radius: 6px 0px 0px 6px
+}
+
